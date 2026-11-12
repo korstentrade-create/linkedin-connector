@@ -1,0 +1,18 @@
+[project]
+name = "linkedin-connector"
+version = "0.1.0"
+description = "MCP server: draft and publish LinkedIn posts with an approval gate, plus a profile-optimizer prompt."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["mcp>=1.2.0", "httpx>=0.27"]
+
+[project.scripts]
+linkedin-connector = "linkedin_connector.server:main"
+linkedin-connector-login = "linkedin_connector.auth:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["linkedin_connector"]

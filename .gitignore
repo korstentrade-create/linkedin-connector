@@ -1,0 +1,6 @@
+.env
+*.json
+!claude_desktop_config.example.json
+__pycache__/
+*.egg-info/
+.venv/

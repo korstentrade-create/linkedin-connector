@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "linkedin": {
+      "command": "linkedin-connector"
+    }
+  }
+}
